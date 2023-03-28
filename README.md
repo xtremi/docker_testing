@@ -17,10 +17,10 @@ This test contains the following:
 - `python_server\server.py`
     - A minimal Python webserver using `http.server` package
 - `python_client\client.py`
-    - A minimal Python client using httplib2 that performs some GET and POST to the server
+    - A minimal Python client using `httplib2` that performs some `GET` and `POST` requests to the server
 
 - `client.Dockerfile` and `server.Dockerfile`
-    - Docker files for building an images of both python scripts
+    - Docker files for building an images of both Python scripts
 
 - `build_images.bat`
     - Calls docker build with some parameters for both docker files
