@@ -2,6 +2,16 @@
 
 ## Test_01_py_server_client
 
+### Run:
+
+- `build_images.bat`
+- `run_containers.bat`
+- check log of client container - should show some responses
+
+*(If not on Windows, run the equivalent commands in the `.bat` files)*
+
+### Description:
+
 This test contains the following:
 
 - `python_server\server.py`
@@ -22,6 +32,13 @@ This test contains the following:
     - Alias is used in python_client\client.py to connect to the server in the other container
 
 ## Test_02_docker_compose_py_server_client
+
+### Run:
+
+- `docker-compose up -d` 
+- check log of `py_client-1` container - should show some responses
+
+### Description:
 
 Similar to **Test_01_py_server_client**:
 
