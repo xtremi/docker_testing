@@ -1,0 +1,25 @@
+version: "3.0"
+
+services:
+  cpp_build:
+    build:
+      context: .
+      dockerfile: build.Dockerfile
+    image: xtremi/cpp_test/build:1.0
+    volumes:
+      - install-vol:/build/install
+    
+
+  cpp_run:
+    build:
+      context: .
+      dockerfile: run.Dockerfile
+    image: xtremi/cpp_test/run:1.0
+    volumes:
+      - install-vol:/install
+    depends_on:
+      - cpp_build
+
+
+volumes:
+  install-vol:

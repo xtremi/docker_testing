@@ -1,0 +1,1 @@
+cmake -S src -B %~pd0/../build -DCMAKE_INSTALL_PREFIX=%~pd0/../build/install
