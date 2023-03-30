@@ -4,3 +4,4 @@ __pycache__
 #cpp
 .vs
 build
+install_from_docker

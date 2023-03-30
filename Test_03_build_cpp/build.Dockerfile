@@ -10,7 +10,7 @@ COPY ./src ./src
 
 #Either to stuff here (will run when building image)
 RUN cmake -S src -B build -DCMAKE_INSTALL_PREFIX=build/install 
-RUN cmake --build build --config=Release
+#RUN cmake --build build --config=Release
 
 
 #Or run stuff here (will run when running container)
